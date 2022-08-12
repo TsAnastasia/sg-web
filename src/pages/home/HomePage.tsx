@@ -5,6 +5,7 @@ import Image from "../../assets/images/react.png";
 import { useAppDispatch, useAppSelector } from "../../hooks/redux";
 import { logout } from "../../redux/example/exampleSlice";
 import HomeFonts from "./fonts/HomeFonts";
+import HomeMain from "./main/HomeMain";
 
 const HomePage = () => {
   const dispatch = useAppDispatch();
@@ -15,6 +16,7 @@ const HomePage = () => {
   };
   return (
     <main>
+      <HomeMain />
       <h1>Home page</h1>
       <section>
         <AppButton to={AppRoutes.HOME}>go to home page</AppButton>

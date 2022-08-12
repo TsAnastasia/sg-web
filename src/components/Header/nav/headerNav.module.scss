@@ -1,0 +1,28 @@
+.root {
+  margin: 0 36px 0 54px;
+
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+
+  &::before,
+  &::after {
+    content: "";
+    height: 42px;
+    width: 1px;
+
+    background: #ffffff;
+  }
+}
+
+.list {
+  margin: 0 8px;
+  padding: 0;
+
+  list-style: none;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}

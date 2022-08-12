@@ -1,0 +1,108 @@
+.root {
+  position: relative;
+}
+
+.name {
+  margin: 0;
+  padding: 0 4px;
+  min-width: 100px;
+  min-height: 72px;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  text-decoration: none;
+  white-space: nowrap;
+
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    height: 0;
+    width: 0;
+
+    border-top: 2px solid #07c2d5;
+    background: linear-gradient(
+      180deg,
+      rgba(7, 194, 213, 0.2) 0%,
+      transparent 100%
+    );
+
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    transition: all 0.5s ease-in-out;
+    transform: translate(-50%, 0);
+    opacity: 0;
+  }
+
+  .root:hover &::before {
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+.menu {
+  padding: 8px 0 0;
+  max-width: 0;
+  min-width: 0;
+
+  background: linear-gradient(
+    360deg,
+    rgba(7, 194, 213, 0.2) 0%,
+    rgba(7, 194, 213, 0) 100%
+  );
+
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
+
+  transition: all 0.5s ease-in-out;
+
+  .root:hover & {
+    min-width: 160px;
+    max-width: auto;
+
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.item {
+  margin: 0;
+  padding: 5px;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+
+  color: #ffffff;
+
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #04727e;
+  }
+}

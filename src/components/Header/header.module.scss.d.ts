@@ -1,8 +1,9 @@
 declare namespace HeaderModuleScssNamespace {
   export interface IHeaderModuleScss {
-    img: string;
     logo: string;
+    name: string;
     root: string;
+    tomain: string;
   }
 }
 
