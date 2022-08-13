@@ -1,6 +1,10 @@
 declare namespace HomeMainModuleScssNamespace {
   export interface IHomeMainModuleScss {
+    info: string;
+    light: string;
     root: string;
+    title: string;
+    wrapper: string;
   }
 }
 

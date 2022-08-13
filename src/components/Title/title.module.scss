@@ -1,0 +1,46 @@
+.root {
+  margin: 0 auto;
+  padding: 15px;
+  width: min-content;
+  min-width: 550px;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 68px;
+  letter-spacing: 0.1px;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: #ffffff;
+
+  position: relative;
+
+  span {
+    color: #07c2d5;
+  }
+
+  &::after,
+  &::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+
+    border-right: 3px solid #ffffff;
+    border-top: 3px solid #ffffff;
+
+    position: absolute;
+  }
+
+  &::before {
+    right: 0;
+    top: 0;
+  }
+
+  &::after {
+    left: 0;
+    bottom: 0;
+    transform: rotate(180deg);
+  }
+}

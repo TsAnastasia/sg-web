@@ -6,12 +6,24 @@ interface I extends ButtonProps {
   to?: string;
 }
 
-const AppButton = styled(({ to, ...props }: I) => {
+const AppButton = styled(({ to, variant = "outlined", ...props }: I) => {
   const linkProps = to ? { component: Link, to } : {};
 
-  return <Button {...props} {...linkProps} />;
+  return <Button {...props} variant={variant} {...linkProps} />;
 })({
-  textTransform: "none",
+  padding: 18,
+  minWidth: 325,
+  boxSizing: "border-box",
+
+  fontFamily: "'Open Sans'",
+  fontStyle: "normal",
+  fontWeight: 400,
+  fontSize: 18,
+  lineHeight: "30px",
+  letterSpacing: "0.1px",
+
+  border: "1px solid",
+  borderRadius: 37,
 });
 
 export default AppButton;

@@ -1,4 +1,43 @@
 .root {
-  background-color: #02275c;
-  min-height: 50vh;
+  padding: 80px 0;
+  min-height: 780px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.wrapper {
+  margin-right: 48px;
+  max-width: 550px;
+}
+
+.title {
+  margin: 0;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 68px;
+  letter-spacing: 0.1px;
+
+  color: #ffffff;
+
+  .light {
+    font-weight: 400;
+  }
+}
+
+.info {
+  margin: 8px 0 52px;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.1px;
+
+  color: #ffffff;
 }
