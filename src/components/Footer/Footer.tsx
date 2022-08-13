@@ -1,5 +1,7 @@
+import scss from "./footer.module.scss";
+
 const Footer = () => (
-  <footer>
+  <footer className={scss.root}>
     <p>footer</p>
   </footer>
 );
