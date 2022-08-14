@@ -1,0 +1,12 @@
+.root {
+  margin: 80px auto 30px;
+  max-width: 1120px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.item:not(:last-child) {
+  margin-right: 24px;
+}

@@ -10,22 +10,21 @@ import {
   REHYDRATE,
 } from "redux-persist";
 import storage from "redux-persist/lib/storage/session";
-
 // import storage from "redux-persist/lib/storage";
 
-import { exampleSlice } from "./example/exampleSlice";
+import { homeSlice } from "./home/homeSlice";
 
 // import { usersAPI } from "../allData/API/users/usersAPI";
 
 const rootReducer = combineReducers({
-  [exampleSlice.name]: exampleSlice.reducer,
+  [homeSlice.name]: homeSlice.reducer,
   //   [usersAPI.reducerPath]: usersAPI.reducer,
 });
 
 const persistConfig = {
   key: "root",
   storage,
-  whitelist: [exampleSlice.name],
+  whitelist: [homeSlice.name],
 };
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);

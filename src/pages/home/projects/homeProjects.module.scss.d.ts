@@ -1,5 +1,6 @@
 declare namespace HomeProjectsModuleScssNamespace {
   export interface IHomeProjectsModuleScss {
+    list: string;
     root: string;
   }
 }
