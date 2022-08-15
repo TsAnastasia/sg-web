@@ -1,5 +1,7 @@
 declare namespace HomeEducationModuleScssNamespace {
   export interface IHomeEducationModuleScss {
+    article: string;
+    info: string;
     root: string;
   }
 }
